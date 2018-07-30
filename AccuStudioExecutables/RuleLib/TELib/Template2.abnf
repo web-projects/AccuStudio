@@ -1,0 +1,22 @@
+// Handle a Screen with a single field of digits that selects an option.
+// The <Home> key snaps to the field, and the field need not be scoped.
+// Dialog Grammar: |DialogName|
+//
+
+#include "|AppName|_res.h"
+#include "vkeys.h"
+
+#start <|DialogName|
+
+<|DialogName|> = 
+
+  <selection> => DEPRESS(VK_HOME)+SETFIELD(0, <selection>)+DEPRESS(VK_ENTER);
+
+
+<selection> = #(	
+			option 1 				= 1,		// List of options and their returned codes
+			option 2				= 2,
+			sign off 				= 90,
+			log off 				= 90			
+		 );
+

@@ -1,0 +1,20 @@
+//
+// Dialog Grammar: 0
+//
+
+#include <utils>
+
+#start <DID_0_Grm>
+<DID_0_Grm> = 
+<!-- DID_0_Grm -->
+  <DID_0_Grm_CID_0> 
+<!-- DID_0_Grm -->
+;
+
+<!-- CID_0 -->
+
+<DID_0_Grm_CID_0> = 
+	select <digits> => SETFIELD(0, <digits>)
+ | 	data is <Icao> => SETFIELD(0, <Icao>)
+;
+<!-- CID_0 -->

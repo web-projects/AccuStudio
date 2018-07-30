@@ -1,0 +1,21 @@
+// Handle a Screen with a single field of digits that select an option.
+// Dialog Grammar: |DialogName|
+//
+
+#include "|AppName|_res.h"
+#include "vkeys.h"
+
+#start <|DialogName|>
+
+<|DialogName|> = 
+
+  <selection> => SETFIELD(|FieldID|, <selection>)+DEPRESS(VK_ENTER);
+
+
+<selection> = #(	
+			option 1 				= 1,		// List of options and their returned codes
+			option 2				= 2,
+			sign off 				= 90,
+			log off 				= 90			
+		 );
+

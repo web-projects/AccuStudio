@@ -1,0 +1,6 @@
+
+// Exported Rules
+
+<tempnumber> = <threedigit> [POINT=>"." <onedigit>];
+
+

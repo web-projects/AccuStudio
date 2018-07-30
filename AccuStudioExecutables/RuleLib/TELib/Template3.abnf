@@ -1,0 +1,21 @@
+// Handle a Screen with a list of options that are scrolled to and selected with <Enter>
+// Dialog Grammar: |DialogName|
+//
+
+#include "|AppName|_res.h"
+#include "vkeys.h"
+
+#start <|DialogName|>
+
+<|DialogName|> = 
+
+  <selection> => NAVIGATE(0, <selection>)+DEPRESS(VK_ENTER);	// Go to indicated line
+
+
+<selection> = #(	
+			option 1 				= 1 , 		//Line number on the screen for each option
+		  option 2				= 2,
+			sign off 				= 3,
+			log off 				= 3			
+		 );
+

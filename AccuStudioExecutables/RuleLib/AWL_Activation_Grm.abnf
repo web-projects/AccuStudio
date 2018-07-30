@@ -1,0 +1,8 @@
+//
+// Dialog Grammar for switching within Always-Listening Mode
+//
+
+#start <AWL_Activation_Grm>
+
+<AWL_Activation_Grm> = Please go to sleep => ACTIVATE(0) | 
+		       please wake up => ACTIVATE(1);

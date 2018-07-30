@@ -1,0 +1,52 @@
+Target Recognizer:  Nuance 3200
+
+Processing Grammar Set SamplAppGS:
+
+Compiling (#0) AWL_Activation_Grm
+ Including vkeys.h
+ Including utils
+Compiling (#1) DID_0_Grm
+ Including utils
+ Including vkeys.h
+Compiling (#2) DID_Login_Grm
+ Including utils
+ Including SamplApp_res.h
+ Including vkeys.h
+ Including DID_Login_Grm_include
+ Including globals.h
+ Including TTSControl.h
+Compiling (#5) DID_Guest_Grm
+ Including SamplApp_res.h
+ Including vkeys.h
+ Including DID_Guest_Grm_include
+ Including globals.h
+Compiling (#7) DID_OS400_Grm
+ Including SamplApp_res.h
+ Including vkeys.h
+ Including DID_OS400_Grm_include
+ Including globals.h
+Compiling (#9) DID_Games_Grm
+ Including SamplApp_res.h
+ Including vkeys.h
+ Including DID_Games_Grm_include
+ Including globals.h
+Compiling (#11) DID_OfficeTasks_Grm
+ Including SamplApp_res.h
+ Including vkeys.h
+ Including DID_OfficeTasks_Grm_include
+ Including globals.h
+Compiling (#13) DID_BattleShip_Grm
+ Including SamplApp_res.h
+ Including vkeys.h
+ Including DID_BattleShip_Grm_include
+Compiling (#14) DID_JCRBattleShip_Grm
+ Including SamplApp_res.h
+ Including vkeys.h
+ Including DID_JCRBattleShip_Grm_include
+
+Compiling Target Grammars:
+
+Using the Model: C:\Program Files\Vangard Voice\AccuSpeech_Runtime\acmod3200_car_enu_f16_compact_lew2.dat
+The specified grammar options do not allow a non-terminal in a modifiable rule.
+Nuance Grammar Compiler errors
+Including SamplApp_res.h

@@ -1,0 +1,199 @@
+<html> 
+<head>
+  <meta name=vs_showGrid content="False"><title>ControlDemo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<!-- AccuSPEECH OCX Control -->
+<object classid="clsid:DF36BC79-4249-4FE8-8390-82EAEF7DBD71" ID="AccuSPEECH"></object>
+
+<!-- AccuSPEECH Universal Javascript Include File -->
+<script type="text/javascript" src="AccuSPEECH.js"></script>
+ 
+
+<!-- AccuSPEECH Page Specific Initialization -->
+<script type="text/javascript">
+	AccuSPEECH.VVAppInit("http://192.168.2.95/htmldemo/ControlDemo.ini"); 
+	AccuSPEECH.VVPageInit(Number(133));
+</script>
+
+</head>
+
+<body lang="E-US" onkeyup="VVSKeyFilter(event)" onkeydown="VVSKeyFilter(event)"> 
+
+<!-- Local functions -->
+
+<script type="text/javascript">
+  function SignPatient()
+  {
+    alert("Patient Input Complete");
+  }
+
+  function ClearForm()
+  {
+    var x = document.forms.ControlDemo;
+    x.reset();
+  }
+</script>
+
+
+<div>
+<table style="WIDTH: 398.4pt" border="0" cellpadding="0" width="664">
+  <tbody>
+    <tr>
+     <td valign="top" width="188">
+      <p>
+        <img id="_x0000_i1025" src="VVLogo.jpg" height="83" width="154">
+      </p>
+     </td>
+     <td valign="top">
+      <p style="TEXT-ALIGN: center" align="center">
+        <b>
+          <span style="FONT-SIZE: 18pt; FONT-FAMILY: Helvetica">
+            AccuSPEECH HTML Demonstration
+          </span>
+        </b>
+      </p>
+     </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+</p>
+<form name="ControlDemo">
+  <table id="t" style="MARGIN-LEFT: 89.7pt; WIDTH: 3.5in" 
+    border="0" cellpadding="0" width="420" >
+    <tbody>
+      <tr>
+       <td valign="top" width="177" height=32>
+        <p style="TEXT-ALIGN: right" align="right">
+          <span style="FONT-FAMILY: Helvetica">Temp ºC</span>
+        </p>
+       </td>
+       <td valign="top" width="13" height=32>
+        <p></p>
+        </td>
+        <td valign="top" width="222" height=32>
+        <p><input name="Temp" type="text" id=1008 ></p>
+        </td>
+      </tr>
+      <tr>
+       <td valign="top" width="177">
+        <p style="TEXT-ALIGN: right" align="right">
+          <span style="FONT-FAMILY: Helvetica">Pulse</span>
+        </p>
+       </td>
+       <td valign="top" width="13">
+        <p></p>
+       </td>
+       <td valign="top" width="222">
+        <p>
+         <input name="Pulse" type="text" id=1009 > 
+        </p>
+       </td>
+      </tr>
+      <tr>
+        <td valign="top" width="177">
+         <p style="TEXT-ALIGN: right" align="right">
+          <span style="FONT-FAMILY: Helvetica">Breathing</span>
+        </p>
+       </td>
+       <td valign="top" width="13">
+        <p></p>
+        </td>
+       <td valign="top" width="222">
+        <p>
+         <input name="Breathing" type="text" id=1011 >
+        </p>
+       </td>
+      </tr>
+      <tr>
+       <td valign="top" width="177" height=27>
+         <p style="TEXT-ALIGN: right" align="right">
+          <span style="FONT-FAMILY: Helvetica">Pain Level</span>
+        </p>
+       </td>
+       <td valign="top" width="13" height=27>
+        <p></p>
+        </td>
+       <td valign="top" width="222" height=27>
+        <p><input name="Pain" type="text" id=1010 ></p>
+       </td>
+      </tr>
+      <tr>
+       <td valign="top" width="177">
+        <p style="TEXT-ALIGN: right" align="right">
+         <span style="FONT-FAMILY: Helvetica">Systolic BP</span>
+        </p>
+       </td>
+       <td valign="top" width="13">
+        <p></p>
+       </td>
+       <td valign="top" width="222">
+        <p><input name="SystolicBP" type="text" id=1012 ></p>
+       </td>
+      </tr>
+      <tr>
+       <td valign="top" width="177">
+        <p style="TEXT-ALIGN: right" align="right">
+         <span style="FONT-FAMILY: Helvetica">Diastolic BP</span>
+        </p>
+       </td>
+       <td valign="top" width="13">
+        <p></p>
+       </td>
+       <td valign="top" width="222">
+        <p>
+         <input name="DiastolicBP" type="text" id=1013 >
+        </p>
+       </td>
+      </tr>
+    </tbody>
+  </table>
+  <p></p>
+
+
+<TABLE id=Table1 height=92 cellSpacing=1 cellPadding=1 width=313 border=0>
+  <TR>
+    <TD width=87></TD>
+    <TD></TD>
+    <TD></TD></TR>
+  <TR>
+    <TD width=87></TD>
+    
+    <TD><input id=1014 type="button" value=Sign name=Button1 onclick="SignPatient()" ></TD>
+    <TD align=right><input id=1015 type="button" value=Clear name=Reset1 onclick="ClearForm()"></TD></TR>
+
+    <input id=1016 type=CHECKBOX name="maillist" value=PutMeOn>Put me on the list!<P>
+    
+    <input id=1017 type="radio" name="group2" value="Water"> Water<br>
+    <input id=1018 type="radio" name="group2" value="Beer"> Beer<br>
+    <input id=1019 type="radio" name="group2" value="Wine" checked> Wine<br>
+
+    <SELECT id=1020 NAME="Cats" SIZE="1">
+    <OPTION VALUE="1" SELECTED> Calico
+    <OPTION VALUE="2">Tortie
+    <OPTION VALUE="3" >Siamese
+    </SELECT>
+
+    <TEXTAREA id=1021 NAME="comments" COLS=40 ROWS=6>
+    </TEXTAREA>
+
+      
+  <TR>
+    <TD width=87></TD>
+    <TD></TD>
+    <TD></TD></TR></TABLE>
+<P></P>
+</form>
+</div>
+
+
+<!-- Set focus to an initial field.  Sets up grammars correctly too! -->
+<script type="text/javascript">
+  var x = document.getElementById('1008');
+  x.focus();
+  AccuSPEECH.VVFocusChange(Number(1008));
+</script>
+
+</body>
+</html>

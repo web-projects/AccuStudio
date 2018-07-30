@@ -1,0 +1,885 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""AccuStudio.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "AccuStudio.ico"
+IDR_ACCUSTTYPE          ICON                    "AccuStudioDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "&New"
+        BEGIN
+            MENUITEM "&File\tCtrl+N",               ID_FILE_NEW, INACTIVE
+            MENUITEM "&Project",                    ID_FILE_NEW_PROJECT, INACTIVE
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Open P&roject",               ID_FILE_OPEN_PROJECT
+        MENUITEM "Sa&ve Project",               ID_FILE_SAVE_PROJECT
+        MENUITEM "Close Pro&ject",              ID_FILE_CLOSE_PROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVEAS
+        MENUITEM "Save Al&l",                   ID_FILE_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Page Set&up...",              ID_FILE_PRINT_SETUP
+        MENUITEM "&Print",                      ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Grammar &Wizard\tCtrl+W",     ID_VIEW_GRAMMAR_WIZARD
+        MENUITEM "Object Wizard\tCtrl+J",       ID_VIEW_OBJECTWIZARD, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Project\tCtrl+P",            ID_VIEW_PROJECT
+        MENUITEM "Results\tCtrl+R",             ID_VIEW_RESULTS
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "Add Grammar Set",             ID_PROJECT_ADD_GRAMMARSET, INACTIVE
+        MENUITEM "Add Grammar",                 ID_PROJECT_ADD_GRAMMAR, INACTIVE
+        MENUITEM "Add Grammar Files",           ID_PROJECT_ADDGRAMMARFILES, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Update Project from Resource File", ID_PROJECT_UPDATEPROJECTFROMRESOURCEFILE32825, INACTIVE
+        MENUITEM "Add Resources from Resource File", ID_PROJECT_ADDRESOURCESFROMRESOURCEFILE, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Settings",                    ID_PROJECT_SETTINGS, INACTIVE
+    END
+    POPUP "&Grammar"
+    BEGIN
+        MENUITEM "Exercise\t Ctrl+E",           ID_GRAMMAR_EXERCISE
+        MENUITEM "Build Library",               ID_GRAMMAR_BUILDLIBRARY, INACTIVE
+    END
+    POPUP "&Build"
+    BEGIN
+        MENUITEM "Build Project\tCtrl+B",       ID_BUILD_BUILD_PROJECT
+        MENUITEM "Build from Definition File",  ID_BUILD_BUILDFROMDEFINITIONFILE, INACTIVE
+    END
+    MENUITEM "Tools",                       ID_TOOLS
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About AccuSPEECH Studio...", ID_APP_ABOUT
+        MENUITEM "Semantic Functions",          ID_HELP_SEMANTICCODES
+    END
+END
+
+IDR_ACCUSTTYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "&New"
+        BEGIN
+            MENUITEM "&File\tCtrl+N",               ID_FILE_NEW, INACTIVE
+            MENUITEM "&Project",                    ID_FILE_NEW_PROJECT, INACTIVE
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Open P&roject",               ID_FILE_OPEN_PROJECT
+        MENUITEM "Sa&ve Project",               ID_FILE_SAVE_PROJECT
+        MENUITEM "Close Pro&ject",              ID_FILE_CLOSE_PROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVEAS
+        MENUITEM "Save Al&l",                   ID_FILE_SAVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Page Set&up...",              ID_FILE_PRINT_SETUP
+        MENUITEM "&Print",                      ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Grammar &Wizard\tCtrl+W",     ID_VIEW_GRAMMAR_WIZARD
+        MENUITEM "Object Wizard\tCtrl+J",       ID_VIEW_OBJECTWIZARD, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Project\tCtrl+P",            ID_VIEW_PROJECT
+        MENUITEM "Results\tCtrl+R",             ID_VIEW_RESULTS
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "Add Grammar Set",             ID_PROJECT_ADD_GRAMMARSET, INACTIVE
+        MENUITEM "Add Grammar",                 ID_PROJECT_ADD_GRAMMAR, INACTIVE
+        MENUITEM "Add Grammar Files",           ID_PROJECT_ADDGRAMMARFILES, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Update Project from Resource File", ID_PROJECT_UPDATEPROJECTFROMRESOURCEFILE32825, INACTIVE
+        MENUITEM "Add Resources from Resource File", ID_PROJECT_ADDRESOURCESFROMRESOURCEFILE, INACTIVE
+        MENUITEM SEPARATOR
+        MENUITEM "Settings",                    ID_PROJECT_SETTINGS, INACTIVE
+    END
+    POPUP "&Grammar"
+    BEGIN
+        MENUITEM "Exercise\tCtrl+E",            ID_GRAMMAR_EXERCISE
+        MENUITEM "Build Library",               ID_GRAMMAR_BUILDLIBRARY, INACTIVE
+    END
+    POPUP "&Build"
+    BEGIN
+        MENUITEM "Build Project\tCtrl+B",       ID_BUILD_BUILD_PROJECT
+        MENUITEM "Build from Definition File",  ID_BUILD_BUILDFROMDEFINITIONFILE, INACTIVE
+    END
+    MENUITEM "Tools",                       ID_TOOLS32830
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About AccuSPEECH Studio...", ID_APP_ABOUT
+        MENUITEM "Semantic Functions",          ID_HELP_SEMANTICCODES32835
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "B",            ID_BUILD_BUILD_PROJECT, VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "W",            ID_VIEW_GRAMMAR_WIZARD, VIRTKEY, CONTROL, NOINVERT
+    "J",            ID_VIEW_OBJECTWIZARD,   VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_VIEW_PROJECT,        VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_VIEW_RESULTS,        VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_GRAMMAR_EXERCISE,    VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 193, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About AccuSPEECH Studio"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,15,20,20
+    LTEXT           "AccuSPEECH Studio Version 4.5.1",IDC_ABOUT,41,17,140,24,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004-2013 Vangard Voice Systems.",IDC_STATIC,41,47,135,8
+    DEFPUSHBUTTON   "OK",IDOK,71,85,50,14,WS_GROUP
+    LTEXT           "All Rights Reserved.",IDC_STATIC,41,64,79,8
+END
+
+IDD_TREE_CONTAINER DIALOGEX 20, 20, 264, 216
+STYLE DS_SETFONT | DS_SETFOREGROUND | WS_VISIBLE | WS_CAPTION | WS_HSCROLL | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Project"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE_CONTROL,"SysTreeView32",WS_BORDER | WS_TABSTOP,7,7,250,192
+END
+
+IDD_NEW_PROJECT DIALOG  0, 0, 257, 117
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Project"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,78,50,14
+    LTEXT           "Name and Lo&cation:",IDC_STATIC,14,16,65,8
+    EDITTEXT        IDC_PROJ_LOCATION,14,26,215,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_LOCSEARCH,230,26,11,15
+    LTEXT           "Re&source File:",IDC_STATIC,14,43,46,8
+    EDITTEXT        IDC_PROJ_RESLOC,14,53,215,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_RESSEARCH,230,53,11,15
+END
+
+IDD_PROJECTFILES DIALOGEX 0, 0, 194, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Grammar Files"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,114,121,50,14
+    COMBOBOX        IDC_GRAMMARSETLIST,14,25,165,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_FILELIST,14,51,163,58,LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grammar Set:",IDC_STATIC,13,14,44,8
+    LTEXT           "Grammar Files:",IDC_STATIC,13,40,47,8
+END
+
+IDD_RESULTS_CONTAINER DIALOGEX 0, 0, 416, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Project Build Results"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_RES_LIST,7,7,402,105,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GRAMSETNAME DIALOG  0, 0, 133, 84
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Grammar Set"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,13,26,96,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,19,48,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,74,48,40,14
+    LTEXT           "Grammar Set Name:",IDC_STATIC,13,15,64,8
+END
+
+IDD_GRAMMAR_WIZARD DIALOGEX 0, 0, 184, 300
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "AccuStudio Grammar Wizard"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_GRAMMARSET,16,21,142,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DLG,16,45,142,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_GRAMNAME,16,70,142,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CONTROLNAME,16,120,142,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FOCUS_PROMPT,16,144,142,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DATA_ENTRY_PROMPT,"RICHEDIT",WS_BORDER | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,16,170,142,30
+    EDITTEXT        IDC_BASELINE_RULE,16,213,142,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_PHRASE_LIST,16,242,143,78,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Build Control Grammar",IDC_BUILD,53,272,82,14
+    PUSHBUTTON      ">",IDC_NEXT_CONTROL,162,95,9,14,NOT WS_VISIBLE
+    PUSHBUTTON      "+",IDC_DEADD,162,213,9,14
+    PUSHBUTTON      "+",IDC_ADD,162,241,9,14
+    PUSHBUTTON      "-",IDC_SUBTRACT,162,255,9,14
+    LTEXT           "Dialog:",IDC_DLG_TEXT,16,36,22,8
+    LTEXT           "Dialog Grammar Name:",IDC_GRAMNAME_TEXT,16,60,74,8
+    LTEXT           "Control:",IDC_CONTROL_TEXT,16,86,31,8
+    LTEXT           "Control Grammar Name:",IDC_CONTROLNAME_TEXT,16,111,79,8
+    LTEXT           "Data Entry Prompt:",IDC_DATA_ENTRY_PROMPT_TEXT,16,159,60,8
+    LTEXT           "Recognition Phrase List:",IDC_RECPHRASELIST_TEXT,16,231,78,8
+    LTEXT           "Grammar Set:",IDC_STATIC,16,12,46,8
+    LTEXT           "Navigation Prompt:",IDC_CMDPROMPT_TEXT,16,135,61,8
+    LTEXT           "Data Entry Rule:",IDC_STATIC,16,204,52,8
+    PUSHBUTTON      "+",IDB_PREREC,162,119,9,14
+    COMBOBOX        IDC_CONTROL_COMBO,16,96,141,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FINDDLG DIALOG  0, 0, 225, 85
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FINDSTR,54,16,152,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Find Next",IDOK,155,41,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,155,57,50,14
+    CONTROL         "Match whole word only",IDC_WHOLEWORD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,42,89,10
+    CONTROL         "match case",IDC_MATCHCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,54,53,10
+    LTEXT           "Find what:",IDC_STATIC,14,19,34,8
+END
+
+IDD_GOTO DIALOG  0, 0, 118, 78
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GoTo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Go To",IDOK,17,47,38,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,47,36,14
+    LTEXT           "Line Number:",IDC_STATIC,17,14,43,8
+    EDITTEXT        IDC_LINENUM,17,25,61,12,ES_AUTOHSCROLL
+END
+
+IDD_OBJECT_WIZARD DIALOGEX 0, 0, 180, 194
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "AccuStudio Object Wizard"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_GRAMMARSET,15,21,142,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DLG,15,45,142,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">",IDC_NEXT_CONTROL,161,71,10,12,NOT WS_VISIBLE
+    LISTBOX         IDC_CANDIDATE,15,96,142,49,NOT LBS_NOTIFY | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Set Grammars",IDC_ATTACH,60,157,60,14
+    LTEXT           "Dialog:",IDC_DLG_TEXT,15,36,22,8
+    LTEXT           "Control:",IDC_CONTROL_TEXT,15,61,31,8
+    LTEXT           "Candidate Grammars:",IDC_CANDIDATE_GRAMMAR_TEXT,15,86,68,8
+    LTEXT           "Grammar Set:",IDC_STATIC,15,12,46,8
+    COMBOBOX        IDC_CONTROL_COMBO,16,71,141,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GRAMMAR_EXERSIZER DIALOGEX 0, 0, 216, 298
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "AccuStudio Grammar Exerciser"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_DLG,15,47,142,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">",IDC_NEXT_CONTROL,158,72,10,12,NOT WS_VISIBLE
+    LISTBOX         IDC_REC_RESULTS,15,203,187,56,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Exercise",IDC_RECOGNIZE,37,270,60,14
+    LTEXT           "Dialog:",IDC_DLG_TEXT,15,37,22,8
+    LTEXT           "Control:",IDC_CONTROL_TEXT,15,63,31,8
+    LTEXT           "Recognition Scores and NBest Results:",IDC_CANDIDATE_GRAMMAR_TEXT,15,193,126,8
+    LTEXT           "Semantic Function Calls:",IDC_STATIC,15,135,78,8
+    LISTBOX         IDC_SEMANTIC_CALLS,15,145,187,45,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LISTBOX         IDC_CANDIDATE,15,96,187,37,NOT LBS_NOTIFY | LBS_NOINTEGRALHEIGHT | LBS_NOSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    LTEXT           "Assigned Grammars:",IDC_CANDIDATE_GRAMMAR_TEXT2,15,86,65,8
+    COMBOBOX        IDC_GRAMMARSET,15,21,142,54,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grammar Set:",IDC_STATIC,15,12,46,8
+    COMBOBOX        IDC_CONTROL_COMBO,16,72,141,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Push To Talk",IDC_PTT,"Button",BS_AUTORADIOBUTTON,127,265,56,10
+    CONTROL         "Always Listening",IDC_AWL,"Button",BS_AUTORADIOBUTTON,127,281,66,10
+END
+
+IDD_SHOWNBEST DIALOG  0, 0, 381, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "N-Best Candidate"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,165,47,50,14
+    EDITTEXT        IDC_NBESTCANDIDATE,15,20,353,14,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+SETTINGS_DLG DIALOGEX 0, 0, 131, 173
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Project Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,143,50,14
+    CONTROL         "ViaVoice",IDC_VIAVOICE_REC,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,65,29,42,10
+    CONTROL         "Nuance 3200",IDC_NUANCE_REC,"Button",BS_AUTORADIOBUTTON,65,16,58,10
+    CONTROL         "Fonix",IDC_FONIX_REC,"Button",BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,23,84,33,10
+    LTEXT           "Recognizer:",IDC_STATIC,15,16,42,8
+    COMBOBOX        IDC_LANGUAGE,15,56,97,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Language:",IDC_STATIC,15,43,35,8
+    COMBOBOX        IDC_MODEL,15,86,97,37,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Model:",IDC_STATIC,15,75,23,8
+    LTEXT           "Version:",IDC_STATIC,15,108,28,8
+    EDITTEXT        IDC_MAJOR,45,107,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MINOR,71,107,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUB,97,107,16,12,ES_AUTOHSCROLL
+    LTEXT           "_",IDC_STATIC,63,106,8,8
+    LTEXT           "_",IDC_STATIC,89,106,8,8
+    CONTROL         "New Logic",IDC_NEWLOGIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,126,49,10
+END
+
+IDD_PREREC DIALOGEX 0, 0, 227, 134
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Grammar Attributes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,103,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,103,50,14
+    CONTROL         "Voice Prompt",IDC_VOICEPROMPT,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,20,27,57,10
+    CONTROL         "Wave Capture",IDC_WAVECAPTURE,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,81,27,63,10
+    EDITTEXT        IDC_ACTIONS,20,54,192,27,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Actions:",IDC_STATIC,20,42,27,8
+    CONTROL         "Play WAV",IDC_PLAYWAV,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,149,27,47,10
+    LTEXT           "Pre-Recognition Actions:",IDC_STATIC,20,14,81,8
+    CONTROL         "Dynamic",IDC_DYNAMIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,20,85,43,10
+END
+
+IDD_SELTEMPLATE DIALOGEX 0, 0, 258, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog Templates"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,69,78,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,78,50,14
+    COMBOBOX        IDC_SELTEMPLATE,54,30,148,48,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select TE Dialog Template:",IDC_STATIC,54,17,90,8
+END
+
+IDD_STUDIOFILE DIALOG  0, 0, 320, 200
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "TODO: Place form controls on this dialog.",IDC_STATIC,24,42,280,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,5,2,2
+ PRODUCTVERSION 4,5,2,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Vangard Voice Systems, Inc."
+            VALUE "FileDescription", "AccuSPEECH Studio Application"
+            VALUE "FileVersion", "4, 5, 2, 2"
+            VALUE "InternalName", "AccuStudio"
+            VALUE "LegalCopyright", "© Vangard Voice System, Inc. 2004-2012"
+            VALUE "LegalTrademarks", "AccuSPEECH®"
+            VALUE "OriginalFilename", "AccuStudio.EXE"
+            VALUE "ProductName", "AccuStudio Application"
+            VALUE "ProductVersion", "4, 5, 2, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_TREE_CONTAINER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_NEW_PROJECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_PROJECTFILES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_RESULTS_CONTAINER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_GRAMSETNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_GRAMMAR_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 293
+        HORZGUIDE, 6
+    END
+
+    IDD_FINDDLG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_GOTO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_OBJECT_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 187
+        HORZGUIDE, 6
+    END
+
+    IDD_GRAMMAR_EXERSIZER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 291
+        HORZGUIDE, 6
+    END
+
+    IDD_SHOWNBEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 74
+    END
+
+    SETTINGS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_PREREC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_SELTEMPLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_STUDIOFILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SELTEMPLATE DLGINIT
+BEGIN
+    IDC_SELTEMPLATE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "AccuSPEECH Studio"
+    IDR_ACCUSTTYPE          "\n\nBNFFile\nBNF files(*.abnf)\n.abnf\nAccuSPEECH\nAccuSPEECH BNF File"
+    IDR_ACCUSTPTYPE         "\n\nPRJFile\nProject files (*.vprj)\n.vprj\nAccuSPEECH\nAccuSPEECH Project File"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "AccuSPEECH Studio"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\AccuStudio.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

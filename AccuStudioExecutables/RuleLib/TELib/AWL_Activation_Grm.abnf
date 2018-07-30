@@ -1,0 +1,30 @@
+//
+// Dialog Grammar for MetaCommand Keys
+//
+#include "vkeys.h"
+#include <utils>
+
+<fkeys> = <twodigit>;
+<Function_Keys> = FUNCTION <fkeys> => DEPRESS(ADD(111, <fkeys>));
+<Meta_Keys> = 
+	ENTER => DEPRESS(VK_ENTER)
+	| NEXT FIELD => DEPRESS(VK_TAB)
+	| PREVIOUS FIELD => DEPRESS(VK_BACK)
+	| PAGE UP => DEPRESS(VK_UP)
+	| PAGE DOWN => DEPRESS(VK_DOWN)
+	| BACK SPACE => DEPRESS(VK_BACK)
+	| [GO] HOME => DEPRESS(VK_HOME)
+	|	[GO] LEFT => DEPRESS(VK_LEFT)
+	|	[GO] RIGHT => DEPRESS(VK_RIGHT)
+	|	[GO] UP => DEPRESS(VK_UP)
+	|	[GO] DOWN => DEPRESS(VK_DOWN)
+	| DELETE => DEPRESS(VK_DELETE)
+	| ESCAPE => DEPRESS(VK_ESCAPE)
+
+;
+
+#start <AWL_Activation_Grm>
+
+<AWL_Activation_Grm> = 
+
+	<Function_Keys> | <Meta_Keys>;

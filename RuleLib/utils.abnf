@@ -1,0 +1,155 @@
+//=========================================================================
+// utils.abnf
+//
+//=========================================================================
+
+// Number primatives
+
+<nonzerodigit> = #(1 = 1 , 2 , 3 , 4 , 5 , 6 , 7 ,
+                8, 9 ) ;
+
+<onedigit> = <nonzerodigit> | ZERO => 0 | OH => 0;
+
+
+<digits> =
+	<onedigit>+ ;
+
+<teens> =  #( 10 = 10 , 11 , 12 , 13 , 14 , 15 ,   
+           16 , 17 , 18 ,19) ;
+
+<combinedtens> =
+	#(
+	TWENTY = 2,  
+	TWENY = 2,  
+
+	THIRTY = 3,  
+	THIRDY = 3, 
+	 
+	FORTY = 4,  
+	FORDY = 4, 
+	 
+	FIFTY = 5,  
+	FIFDY = 5, 
+	 
+	SIXTY = 6,  
+	SIXDY = 6,  
+
+	SEVENTY = 7, 
+	SEVENDY = 7, 
+
+	EIGHDY = 8,  
+	EIGHTY = 8,  
+
+	NINETY = 9,
+	NINEDY = 9 
+	)
+	;
+<fullcombinedtens> =
+	#(
+	TWENTY = 20,  
+	TWENY = 20,  
+
+	THIRTY = 30,  
+	THIRDY = 30, 
+	 
+	FORTY = 40,  
+	FORDY = 40, 
+	 
+	FIFTY = 50,  
+	FIFDY = 50, 
+	 
+	SIXTY = 60,  
+	SIXDY = 60,  
+
+	SEVENTY = 70, 
+	SEVENDY = 70, 
+
+	EIGHDY = 80,  
+	EIGHTY = 80,  
+
+	NINETY = 90,
+	NINEDY = 90 
+	)
+	;
+
+<exact_twodigit> =
+	<teens> | <combinedtens> <nonzerodigit> | <fullcombinedtens>;
+
+<twodigit> =
+	<exact_twodigit> | <onedigit> [<onedigit>];
+
+<exact_threedigit> = <nonzerodigit> [HUNDRED] [AND] <exact_twodigit> | 
+                     <nonzerodigit> HUNDRED => 0 [AND] <onedigit> |
+					 <nonzerodigit> HUNDRED =>"00" ;	 
+	
+<threedigit> = <exact_threedigit> | <exact_twodigit> | <onedigit> [<onedigit>] [<onedigit>];
+
+<full_threedigit> =  <exact_threedigit> | <nonzerodigit> <exact_twodigit> |
+		<exact_twodigit> | <onedigit> [<onedigit>] [<onedigit>];
+
+
+<fourdigit> = <nonzerodigit> THOUSAND <threedigit> | <nonzerodigit> THOUSAND => "000" |
+	<exact_twodigit> <exact_twodigit> |  <exact_threedigit> | <exact_twodigit> | <onedigit> [<onedigit>] [<onedigit>] [<onedigit>] ;
+
+<number> = <fourdigit> ;
+
+<fieldedit> = 
+		CLEAR FIELD => CLEARFIELD(0) | 
+		SAY THAT => SAYFIELD(0) ;
+
+
+<alpha> = 
+		#( a = 'a' , b , c , d , e , f , g , h , i , j , k , l , m , n , o , p ,
+		q , r , s , t , u , v , w , x , y , z );
+
+<alphas> = <alpha>+ ;
+
+// ICAO expanded representation of Alphanumerics
+
+<icaodigit> = <nonzerodigit>  | NINER => 9 | ZERO => 0;
+
+<icaoletter> = 
+			#(ALFA = 'a'  
+		,  BRAVO           
+		,  CHARLIE         
+		,  DELTA           
+		,  ECHO            
+		,  FOXTROT         
+		,  GOLF            
+		,  HOTEL            
+		,  INDIA           
+		,  JULIET           
+		,  KILO				 
+		,  LIMA				  
+		,  MIKE             
+		,  NOVEMBER         
+		,  OSCAR             
+		,  PAPA            
+		,  QUEBEC          
+		,  ROMEO          
+		,  SIERRA          
+		,  TANGO           
+		,  UNIFORM         
+		,  VICTOR           
+		,  WHISKEY         
+		,  XRAY					 
+		,  YANKEE          
+		,  ZULU
+		)				 
+		;
+
+<Icaoletters> = <icaoletter>+ ;
+<Icaodigits> = <icaodigit>+ ;
+
+<Icao> = <icao>+ ;
+
+<icao> = <icaoletter> | <icaodigit>;
+
+    		
+//=========================================================================
+//=========================================================================
+// none : the NULL rule
+
+
+<none> = "w_nothing";
+

@@ -1,0 +1,146 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<TITLE></TITLE>
+<style type="text/css"><!--
+BODY { font-family: Courier New, Courier, monospace; font-size: 12pt; color: #000000; background-color: #FFFFFF; }
+FORM { font-family: Courier New, Courier, monospace; font-size: 12pt; color: #000000; background-color: #FFFFFF; }
+TD { font-family: Courier New, Courier, monospace; font-size: 12pt; color: #000000; background-color: #FFFFFF; }
+P { font-family: Courier New, Courier, monospace; font-size: 12pt; color: #000000; background-color: #FFFFFF; }
+SELECT { font-family: Courier New, Courier, monospace; font-size: 12pt; color: #000000; background-color: #FFFFFF; }
+
+
+ 
+.cool { font-family: Verdana, Arial, Times New Roman, Helvetica, Sans Serif; font-size: 10pt; border-collapse: collapse; border-width: 1px; border-width: flat; border-color: #000000;
+ 	padding: 4; }
+.coolhdr { font-family: Verdana, Arial, Times New Roman, Helvetica, Sans Serif; font-size: 10pt; border-collapse: collapse; border-width: 1px; border-width: flat; border-color: #000000;
+ 	padding: 4; background-color: #a0a0ff; }
+.cooltable { width: 90%; border-collapse: collapse; border-width: 1px; border-width: flat; border-color: #000000;
+ 	padding: 4; }
+.coolfield { font-family: Verdana, Arial, Times New Roman, Helvetica, Sans Serif; font-size: 10pt; } 
+--></style>
+<script language="JavaScript"><!--
+var exiting=true;
+
+function load(time)
+{
+document.PrimaryForm.elements[0].focus();
+if (document.PrimaryForm.elements[0].select)
+	document.PrimaryForm.elements[0].select();
+}
+
+function unloadPage()
+{
+if(navigator.appName == "Netscape")
+	exiting=false;
+}
+
+function submitting()
+{
+exiting=false;
+}
+
+function jumpTo(field, value)
+{
+eval("document.PrimaryForm."+field+".value = '"+value+"';");
+document.PrimaryForm.submit();
+}
+
+function quitTransaction()
+{
+exiting=false;
+document.PrimaryForm.QuitSwitch.value="<[QUIT]>";
+document.PrimaryForm.submit();
+}
+
+// -->
+</script>
+
+<!-- AccuSPEECH OCX Control -->
+<!-- THIS IS A COMMENT FOR USE WITH CE DEVICES <object classid="clsid:69F440BD-5403-488A-982B-038D6EE2CD67" ID="AccuSPEECH"> -->
+<object classid="clsid:DF36BC79-4249-4FE8-8390-82EAEF7DBD71" ID="AccuSPEECH">
+</object>
+ 
+<!-- AccuSPEECH Universal Javascript Include File -->
+<script type="text/javascript" src="/Vangard/AccuSPEECH.js">
+</script>
+ 
+<!-- AccuSPEECH Page Specific Initialization -->
+<script type="text/javascript">
+                AccuSPEECH.VVAppInit("http://localhost/Vangard/Huhtamaki.ini");
+                AccuSPEECH.VVPageInit(Number(100));
+</script>
+</head>
+<body lang="EN-US" onkeyup="VVSKeyFilter(event)" onkeydown="VVSKeyFilter(event)" onUnload="unloadPage();" onLoad="load(0)">
+<form name="PrimaryForm" method="POST" onSubmit="submitting();" action="http://10.102.110.106:80/ADC_ThinClient/iqrCQw?">
+
+
+
+
+
+
+
+
+
+
+
+<img src="/images/now_apps.jpg" height=28 width=233 align=top alt="Now! Applications">
+<br>
+<br>
+
+
+
+
+
+
+
+<table border=0 class=cool width="100%">
+<tr align="center" class=cool >
+<td class="cool"><b>System Administration<br> <br>
+</b></td>
+</tr>
+<tr class=cool >
+<td class=cool >
+<table border="1" class="cooltable">
+<tr>
+<th align="center" class="coolhdr">#</th>
+<th align="center" class="coolhdr">Menu&nbsp;Options</th>
+</tr>
+<tr>
+<td align="center" class="cool"><nobr>1</nobr></td>
+<td align="left" class="cool"><nobr><a href="javascript:jumpTo('PrimaryField','1');">Transactions&nbsp;Menu</a></nobr></td>
+</tr>
+<tr>
+<td align="center" class="cool"><nobr>2</nobr></td>
+<td align="left" class="cool"><nobr><a href="javascript:jumpTo('PrimaryField','2');">Consignment&nbsp;Menu</a></nobr></td>
+</tr>
+<tr>
+<td align="center" class="cool"><nobr>3</nobr></td>
+<td align="left" class="cool"><nobr><a href="javascript:jumpTo('PrimaryField','3');">Picking&nbsp;Menu</a></nobr></td>
+</tr>
+<tr>
+<td align="center" class="cool"><nobr>4</nobr></td>
+<td align="left" class="cool"><nobr><a href="javascript:jumpTo('PrimaryField','4');">Labels&nbsp;Menu</a></nobr></td>
+</tr>
+<tr>
+<td align="center" class="cool"><nobr>5</nobr></td>
+<td align="left" class="cool"><nobr><a href="javascript:jumpTo('PrimaryField','5');">Inquiries&nbsp;Menu</a></nobr></td>
+</tr>
+</table>
+
+<br>
+</td></tr>
+</table>
+<input size=1 name="PrimaryField" id=1002>
+<input type="submit" name="submitButton" value="Enter" id=1000>
+<input type="button" value="Quit" onClick="quitTransaction();" id=1001>
+<!-- Set focus to an initial field.  Sets up grammars correctly too! -->
+<script type="text/javascript">
+  var x = document.getElementById('1002');
+  x.focus();
+  AccuSPEECH.VVFocusChange(Number(1002));
+</script>
+<input type="hidden" name="QuitSwitch" value="">
+</form>
+</body>
+</html>

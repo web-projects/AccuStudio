@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[AnalyzeHTML.sln]
+SCC_Aux_Path = "\\Vvprintserver\VSS_DB"
+SCC_Project_Name = "$/AccuSpeechProjects/AccuStudio.root/AccuStudio/AnalyzeHTML", CIBAAAAA
+
+[AnalyzeHTML.vcproj]
+SCC_Aux_Path = "\\Vvprintserver\VSS_DB"
+SCC_Project_Name = "$/AccuSpeechProjects/AccuStudio.root/AccuStudio/AnalyzeHTML", CIBAAAAA
