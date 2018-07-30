@@ -20,11 +20,11 @@
 # -------------------------------------------------------------------
 # BRANCHING REPOSITORY
 
-# git checkout -b <branchname>
+# git checkout -b BRANCHNAME
 # git add -A
 # git commit -a -m "what"
 # git checkout master
-# git merge <branchname>
+# git merge BRANCHNAME
 # git push
 
 # Author: Jon Bianco - Director, Software Engineering (2018)
