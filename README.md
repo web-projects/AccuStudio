@@ -3,7 +3,6 @@
 #
 # Microsoft MFC Application for AccuSpeechMobile Studio
 #
-
 # ------------------------------------------------------------
 # GITHUB
 #	web.projects@yahoo.com
