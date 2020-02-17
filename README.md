@@ -4,11 +4,11 @@
 # Microsoft MFC Application for AccuSpeechMobile Studio
 #
 
-# -------------------------------------------------------------------
+# ------------------------------------------------------------
 # GITHUB
 #	web.projects@yahoo.com
 #   web-projects/AccuStudio
-# -------------------------------------------------------------------
+# ------------------------------------------------------------
 # INTIAL REPOSITORY
 
 # git init
@@ -17,7 +17,7 @@
 # git commit -m "Initial Repository"
 # git push -u origin master
 
-# -------------------------------------------------------------------
+# ------------------------------------------------------------
 # BRANCHING REPOSITORY
 
 # git checkout -b BRANCHNAME
